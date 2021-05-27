@@ -6,8 +6,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1><a href="index.html">영남알프스 9산 도전</a></h1>
-<div id=grid>
+  <h1><a href="index.html">영남알프스 9산 도전</a>
+<br>
+    <input type="button" value="야간모드버튼" onclick="
+    var target = document.querySelector('body');
+    if(this.value === '야간모드버튼'){
+      target.style.backgroundColor='black';
+      target.style.color='white';
+      this.value ='주간모드버튼';
+    }else{
+      target.style.backgroundColor='white';
+      target.style.color='black';
+      this.value ='야간모드버튼';
+    }
+    "></h1>
+  <div id=grid>
     <ol>
       <li><a href="1.html">준비</a></li>
       <br>
@@ -22,7 +35,8 @@
     </div>
 </div>
 <p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/88o93s-Mlgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/88o93s-Mlgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
+<p id="CounterVisitor">0</p>
   </body>
   </html>
